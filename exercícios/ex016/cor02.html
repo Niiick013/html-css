@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /*Condigurações Globais das CSS*/
+            height: 100%;
+        }
+        body{
+            /* degradê normal
+            linear-gradient: to right / to left / to top / to bottom / 90deg(graus) 
+            */
+            background-image: linear-gradient(to left, #27ADF5 5%, #585AFC, #B25BE6, #FF64A9, #F5734E);
+
+            /* degradê em círculos
+            background-image: radial-gradient(circle, white, blue, black);
+            
+            */
+
+            background-attachment: fixed; /* Tela Fixa*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
