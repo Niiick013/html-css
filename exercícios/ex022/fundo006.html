@@ -4,27 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: auto;
-            /*
+            background-position: center center;
+            background-repeat: repeat-y;
+            background-size: cover;
+                Tamanho do fundo (img)
+                ======================
                 Valores:
                 
                 - fixos (px e %)
                 - auto (padrão)
                 - contain (100% exibida e sem cortes)
                 - cover (cobre toda a viewport com cortes)
+            
+
+            background-attachment: fixed;
+                Propriedade de vínculo
+                ======================
+
+                Valores:
+
+                - scroll (padrão)
+                - fixed (fixa a imagem de fundo)
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
+            /*  Shorthand
+                =========
+                
+                color > image > position > repeat > [size] > attachment (documentada)
+            
+            background-size: cover;
+            
+                OBS: atualmente os navegadores não aceitam o cover apesar de estar documentado no W3C, portanto, deve-se defini-lo fora da shorthand ou mudando a ordem como o exemplo abaixo:
+
+                color > image > position > / > size > repeat > attachment (alternativa)
             */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -35,6 +60,18 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti ipsa fugiat et perferendis illum illo non iste aliquid facere nulla, libero hic sapiente at assumenda id mollitia veniam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis voluptate iusto dolor consequuntur libero repudiandae quaerat possimus voluptatem officia eveniet, quisquam, ipsum velit et, unde facilis veritatis deleniti modi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nisi impedit quasi molestiae vero? Vero fugit vitae amet, provident, a suscipit quos sapiente tempora labore, dolores libero. Beatae, sed quisquam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti ipsa fugiat et perferendis illum illo non iste aliquid facere nulla, libero hic sapiente at assumenda id mollitia veniam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis voluptate iusto dolor consequuntur libero repudiandae quaerat possimus voluptatem officia eveniet, quisquam, ipsum velit et, unde facilis veritatis deleniti modi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nisi impedit quasi molestiae vero? Vero fugit vitae amet, provident, a suscipit quos sapiente tempora labore, dolores libero. Beatae, sed quisquam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti ipsa fugiat et perferendis illum illo non iste aliquid facere nulla, libero hic sapiente at assumenda id mollitia veniam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis voluptate iusto dolor consequuntur libero repudiandae quaerat possimus voluptatem officia eveniet, quisquam, ipsum velit et, unde facilis veritatis deleniti modi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nisi impedit quasi molestiae vero? Vero fugit vitae amet, provident, a suscipit quos sapiente tempora labore, dolores libero. Beatae, sed quisquam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti ipsa fugiat et perferendis illum illo non iste aliquid facere nulla, libero hic sapiente at assumenda id mollitia veniam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis voluptate iusto dolor consequuntur libero repudiandae quaerat possimus voluptatem officia eveniet, quisquam, ipsum velit et, unde facilis veritatis deleniti modi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nisi impedit quasi molestiae vero? Vero fugit vitae amet, provident, a suscipit quos sapiente tempora labore, dolores libero. Beatae, sed quisquam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti ipsa fugiat et perferendis illum illo non iste aliquid facere nulla, libero hic sapiente at assumenda id mollitia veniam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis voluptate iusto dolor consequuntur libero repudiandae quaerat possimus voluptatem officia eveniet, quisquam, ipsum velit et, unde facilis veritatis deleniti modi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nisi impedit quasi molestiae vero? Vero fugit vitae amet, provident, a suscipit quos sapiente tempora labore, dolores libero. Beatae, sed quisquam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti ipsa fugiat et perferendis illum illo non iste aliquid facere nulla, libero hic sapiente at assumenda id mollitia veniam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis voluptate iusto dolor consequuntur libero repudiandae quaerat possimus voluptatem officia eveniet, quisquam, ipsum velit et, unde facilis veritatis deleniti modi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nisi impedit quasi molestiae vero? Vero fugit vitae amet, provident, a suscipit quos sapiente tempora labore, dolores libero. Beatae, sed quisquam.</p>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti ipsa fugiat et perferendis illum illo non iste aliquid facere nulla, libero hic sapiente at assumenda id mollitia veniam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officiis voluptate iusto dolor consequuntur libero repudiandae quaerat possimus voluptatem officia eveniet, quisquam, ipsum velit et, unde facilis veritatis deleniti modi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nisi impedit quasi molestiae vero? Vero fugit vitae amet, provident, a suscipit quos sapiente tempora labore, dolores libero. Beatae, sed quisquam.</p>
     </main>
 </body>
