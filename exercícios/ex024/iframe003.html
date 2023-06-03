@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Faça uma esolha</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempora libero officia rerum nisi nemo molestiae repellat aperiam id fugiat necessitatibus hic, ducimus asperiores in suscipit sit dolore, quis ea?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quod, beatae distinctio minus ipsa deleniti omnis excepturi, natus necessitatibus ut sunt, eligendi at consectetur! Numquam debitis placeat aspernatur odio quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos architecto odit voluptatum assumenda libero natus earum itaque consequatur rem iste quaerat nam exercitationem id repudiandae maiores, quo iusto blanditiis.</p>
+
+    <!-- srcdoc insere código html na página -->
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tempora libero officia rerum nisi nemo molestiae repellat aperiam id fugiat necessitatibus hic, ducimus asperiores in suscipit sit dolore, quis ea?</p><img src='imagens/cursoemvideo-logo.png'/>">
+        <!-- mensagem de erro de compatibilidade -->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quia nam, aliquam architecto libero unde vel quisquam tempora rerum aperiam aspernatur quam, odio recusandae. Blanditiis et autem distinctio modi facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptates molestias dignissimos dolore quo facilis distinctio vitae voluptatum. Id officia ducimus cum rerum labore voluptates repellat temporibus iusto natus. Tenetur.</p>
+
+</body>
+</html>
