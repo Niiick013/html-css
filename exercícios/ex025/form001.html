@@ -11,9 +11,14 @@
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
+    <!-- Uso do GET para dados não sensíveis de no máx 3 mil bytes ou letras -->
 
-    <form action="cadastro.php" autocomplete="off">
+    <!-- Uso do POST para dados sensíveis utilizando https para proteger dados, para ocultar os dados da url e se os dados tiverem mais de 3 mil bytes ou envio de arquivos -->
+
+    <h1>Meu primeiro formulário</h1>
+    <!-- o método GET envia os dados do form pela url -->
+    <!-- o método POST oculta os dados enviados pela url mas ainda é possível acessar os dados através da ferramenta de inspecionar elemento do navegador -->
+    <form action="cadastro.php" method="post" autocomplete="off">
         <!-- sempre usar label para criar relação entre o objeto e a etiqueta do mesmo -->
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome"></p>
