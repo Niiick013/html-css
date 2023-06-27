@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="isxmas" value="M" checked><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+            <!--
+                No input radio, os names dos elementdos devem ser o mesmo para que marque apenas um dos elementos
+
+                OBS: Isso não se aplica ao checkbox! E no radio só é possível usar em um elemento!
+
+                O atribulto checked já deixa o elemento marcado tanto no radio quando no checkbox
+            -->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="esbas" id="iesbas" checked><label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
