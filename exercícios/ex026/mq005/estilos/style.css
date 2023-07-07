@@ -11,7 +11,7 @@ html, body {
 }
 
 header {
-    background-color: gray;
+    background-color: rgb(148, 148, 148);
 }
 
 header > h1 {
@@ -19,8 +19,22 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+span#burguer {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
     display: block;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+}
+
+span#burguer:hover {
+    color: black;
+    background-color: white;
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {
@@ -38,7 +52,7 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: rgb(151, 151, 151);
 }
 
 main {
