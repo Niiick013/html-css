@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <!-- biblioteca de fontes e ícones do google -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Media Query</title>
@@ -16,9 +17,18 @@
                 itens.style.display = "block";
             }
         }
+
+        function mudouTamanho() {
+            if(window.innerWidth >= 768) {
+                itens.style.display = "block";
+
+            } else {
+                itens.style.display = "none";
+            }
+        }
     </script>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <!-- uso de um ícone através da classe da biblioteca -->
